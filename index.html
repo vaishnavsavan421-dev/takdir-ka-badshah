@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Takdeer Ke Badshah</title>
+<title>तक़दीर के बादशाह</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
     background:#050505;
-    font-family:Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     height:100vh;
     overflow:hidden;
     display:flex;
@@ -27,12 +27,12 @@ canvas{
     z-index:0;
 }
 
-/* Box */
+/* Main Box */
 .box{
     position:relative;
-    width:90%;
-    max-width:380px;
-    padding:35px 25px;
+    width:92%;
+    max-width:400px;
+    padding:30px 22px;
     background:#0d0d0d;
     border-radius:22px;
     text-align:center;
@@ -68,35 +68,44 @@ canvas{
     border-radius:50%;
     object-fit:cover;
     border:3px solid #00ffee;
-    box-shadow:0 0 20px rgba(0,255,238,.7);
-    margin-bottom:15px;
+    box-shadow:0 0 18px rgba(0,255,238,.8);
+    margin-bottom:14px;
 }
 
+/* Text */
 h1{
-    color:#fff;
+    color:#ffffff;
     font-size:24px;
-    margin-bottom:8px;
+    margin-bottom:12px;
     letter-spacing:1px;
 }
 
-p{
-    color:#bfbfbf;
+.info{
+    color:#ffffff;
     font-size:14px;
-    margin-bottom:22px;
+    line-height:1.6;
+    margin-bottom:18px;
+    font-weight:bold;
 }
 
+.highlight{
+    color:#00ffcc;
+}
+
+/* Button */
 .join-btn{
     display:inline-block;
-    padding:14px 30px;
+    padding:15px 32px;
     background:linear-gradient(45deg,#00ffcc,#00ccff);
     color:#000;
     font-weight:bold;
     font-size:16px;
     border-radius:30px;
     text-decoration:none;
-    box-shadow:0 0 18px rgba(0,255,204,.8);
-    animation:pulse 1.4s infinite;
+    box-shadow:0 0 18px rgba(0,255,204,.9);
+    animation:pulse 1.3s infinite;
 }
+
 @keyframes pulse{
     0%{transform:scale(1)}
     50%{transform:scale(1.08)}
@@ -110,10 +119,27 @@ p{
 <canvas id="snow"></canvas>
 
 <div class="box">
-    <img src="logo.png" class="logo" alt="Takdeer Ke Badshah Logo">
-    <h1>TAKDEER KE BADSHAH</h1>
-    <p>All Matka Games Available – Trusted Private Channel</p>
-    <a href="https://t.me/+YKKujcAmqioyNzU1" class="join-btn">JOIN TELEGRAM</a>
+    <img src="logo.png" class="logo" alt="तक़दीर के बादशाह">
+
+    <h1>तक़दीर के बादशाह</h1>
+
+    <div class="info">
+        @कल्याण @श्री देवी @टाइम बाजार <br>
+        @मिलन गेम (नाइट) <br>
+        @राजधानी (नाइट) @मेन बाजार
+        <br><br>
+        🔥 <span class="highlight">बड़ा खेलो, बड़ा जीतो</span>
+        <br>
+        🌟 <span class="highlight">ओरिजिनल के साथ जुड़ें – आपकी किस्मत का सितारा</span>
+        <br><br>
+        ✅ फास्ट रिज़ल्ट | लाइव सपोर्ट | 100% भरोसेमंद
+        <br><br>
+        ⏰ <span class="highlight">सीमित समय के लिए एक्सेस</span>
+    </div>
+
+    <a href="https://t.me/+YKKujcAmqioyNzU1" class="join-btn">
+        JOIN FREE TELEGRAM
+    </a>
 </div>
 
 <script>
@@ -154,7 +180,6 @@ function move(){
         }
     }
 }
-
 setInterval(draw,33);
 </script>
 
